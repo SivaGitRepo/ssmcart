@@ -3,14 +3,14 @@ open the new folder in VS code
 create two new folders: frontend & backend
 open new terminal (ctrl + backticks), do 'npm init' and then add the necessary metadata for the project
 verify the newly created package.json file
-now to install necessary packages, do 'npm install express dotenv mongoose'
+To install necessary packages, do 'npm install express dotenv mongoose nodemon'  NOTE: npm install nodemon --save-dev
 open package.json file again and see that new dependencies are added after the above step
 create a new file app.js in backend folder, which will be used to create the express app
 create an instance of the express app and export it. The newly created object will have all the methods for the express app
 create a new folder called config in backend folder and add an env file to specify enviromental parameters (ex: PORT, environment)
 create a new file called server.js in the backend folder which will be receiving the exported app module from app.js file
 create a new file called database.js which will be used to establish a mongo DB connection upon call from server.js
-create 2 new folders called controllers & routes
+create 2 new folders in the backend called controllers & routes
 Inside the controllers folder, create new controller file which will have the handler functions
 Inside the routes folder, create new route file which will contain the routes to the handler functions
 Add the route in the app.js file, then add a middleware 'use' which will specify the endpoint name (ex:/api/v1/products)
