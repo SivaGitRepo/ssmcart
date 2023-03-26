@@ -8,6 +8,7 @@ exports.getProducts = (req, res, next) => {
 
 exports.newProduct = async (req, res, next) => {
     const product = await Product.create(req.body);
+    console.log(res);
     res.status(201).json({
         success:true,
         product: product

@@ -1,8 +1,10 @@
+const { json } = require('express');
 const express = require('express');
 const app = express();
 
-const products = require ('./routes/product')
+const products = require ('./routes/product');
 
-app.use('/api/v1/',products)
+app.use(express.json());
+app.use('/api/v1/',products);
 
 module.exports = app;

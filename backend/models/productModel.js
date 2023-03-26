@@ -21,8 +21,10 @@ const productSchema = new mongoose.Schema({
     },
     images: [
         {
-            image: String,
-            required: true
+            image: {
+                type: String,
+                required: true
+            }
         }
     ],
     category: {
@@ -31,7 +33,7 @@ const productSchema = new mongoose.Schema({
         enum: {
             values: [
                 'Electronics',
-                'Mobile phones',
+                'Mobile Phones',
                 'Laptops',
                 'Accessories',
                 'Headphones',
@@ -83,4 +85,4 @@ const productSchema = new mongoose.Schema({
 
 let schema = mongoose.model('Products', productSchema)
 
-model.exports = schema;
+module.exports = schema;
