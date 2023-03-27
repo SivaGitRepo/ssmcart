@@ -16,3 +16,4 @@ Inside the routes folder, create new route file which will contain the routes to
 Add the route in the app.js file, then add a middleware 'use' which will specify the endpoint name (ex:/api/v1/products)
 Create new folder called models in the backend folder and add in the model file to create new products
 Create new function to add new product in the controller and update the URI in the route file
+Create new folder in backend called utils and add seeder file to perform mass DB updates

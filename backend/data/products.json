@@ -1,0 +1,82 @@
+[
+    {
+        "name": "MOTO G 1G",
+        "price": 10000,
+        "description": "Good phone from Moto with 1G compatibility",
+        "ratings": 4.1,
+        "images": [
+            {
+                "image": "product_001.jpg"
+            }
+        ],
+        "category": "Mobile Phones",
+        "seller": "amazon.com",
+        "stock" : 1,
+        "numOfReviews": 11,
+        "reviews": []
+    },
+    {
+        "name": "MOTO G 2G",
+        "price": 12000,
+        "description": "Good phone from Moto with 2G compatibility",
+        "ratings": 4.2,
+        "images": [
+            {
+                "image": "product_002.jpg"
+            }
+        ],
+        "category": "Mobile Phones",
+        "seller": "amazon.com",
+        "stock" : 2,
+        "numOfReviews": 12,
+        "reviews": []
+    },
+    {
+        "name": "MOTO G 3G",
+        "price": 14000,
+        "description": "Good phone from Moto with 3G compatibility",
+        "ratings": 4.3,
+        "images": [
+            {
+                "image": "product_003.jpg"
+            }
+        ],
+        "category": "Mobile Phones",
+        "seller": "amazon.com",
+        "stock" : 3,
+        "numOfReviews": 13,
+        "reviews": []
+    },
+    {
+        "name": "MOTO G 4G",
+        "price": 16000,
+        "description": "Good phone from Moto with 4G compatibility",
+        "ratings": 4.4,
+        "images": [
+            {
+                "image": "product_004.jpg"
+            }
+        ],
+        "category": "Mobile Phones",
+        "seller": "amazon.com",
+        "stock" : 4,
+        "numOfReviews": 14,
+        "reviews": []
+    },
+    {
+        "name": "MOTO G 5G",
+        "price": 20000,
+        "description": "Good phone from Moto with 5G compatibility",
+        "ratings": 4.5,
+        "images": [
+            {
+                "image": "product_005.jpg"
+            }
+        ],
+        "category": "Mobile Phones",
+        "seller": "amazon.com",
+        "stock" : 5,
+        "numOfReviews": 15,
+        "reviews": []
+    }
+]

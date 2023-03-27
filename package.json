@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start": "nodemon backend/server.js",
-    "dev": "set NODE_ENV=development && nodemon backend/server.js"
+    "dev": "set NODE_ENV=development && nodemon backend/server.js",
+    "seeder": "node backend/utils/seeder.js"
   },
   "author": "siva s",
   "license": "ISC",
