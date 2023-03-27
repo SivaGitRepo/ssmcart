@@ -17,3 +17,5 @@ Add the route in the app.js file, then add a middleware 'use' which will specify
 Create new folder called models in the backend folder and add in the model file to create new products
 Create new function to add new product in the controller and update the URI in the route file
 Create new folder in backend called utils and add seeder file to perform mass DB updates
+Create functions and routes to handle update and delete product
+Create error handling routines along with stack to trace error in modules
