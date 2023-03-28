@@ -1,5 +1,6 @@
 const Product = require('../models/productModel');
 const ErrorHandler = require('../utils/errorHandler');
+const catchAsyncError = require('../middlewares/catchAsyncError')
 
 //Get products - api/v1/products
 exports.getProducts = async (req, res, next) => {
@@ -13,26 +14,30 @@ exports.getProducts = async (req, res, next) => {
 
 //Get single product - api/v1/product
 exports.getProduct = async (req, res, next) => {
-    const product = await Product.findById(req.params.id);
-
-    if (!product) {
-        return next(new ErrorHandler('Product not found..!', 400));
+    if (req.params.id.length != 24) {
+        return next(new ErrorHandler('id not valid..!', 400));
     }
-    res.status(201).json({
-        success:true,
-        product: product
-    })
+    else {
+        const product = await Product.findById(req.params.id);
+        if (!product) {
+            return next(new ErrorHandler('Product not found..!', 400));
+        }
+        res.status(201).json({
+            success:true,
+            product: product
+        })
+    }
 }
 
 //Create product - api/v1/product/new
-exports.newProduct = async (req, res, next) => {
+exports.newProduct = catchAsyncError (async (req, res, next) => {
     const product = await Product.create(req.body);
     console.log(res);
     res.status(201).json({
         success:true,
         product: product
     })
-}
+});
 
 //Update product - api/v1/product/:id
 
