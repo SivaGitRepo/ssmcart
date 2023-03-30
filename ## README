@@ -19,3 +19,5 @@ Create new function to add new product in the controller and update the URI in t
 Create new folder in backend called utils and add seeder file to perform mass DB updates
 Create functions and routes to handle update and delete product
 Create error handling routines along with stack to trace error in modules
+Errors handled: product not found, promise/async error, invalid id, unhandled rejection (mongo URI incorrect), unexpected exception
+API 
