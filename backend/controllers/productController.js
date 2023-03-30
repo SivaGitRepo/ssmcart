@@ -13,13 +13,9 @@ exports.getProducts = async (req, res, next) => {
 }
 
 //Get single product - api/v1/product
-exports.getProduct = async (req, res, next) => {
-    if (req.params.id.length != 24) {
-        return next(new ErrorHandler('id not valid..!', 400));
-    }
-    else {
-        const product = await Product.findById(req.params.id);
-        if (!product) {
+exports.getProduct = catchAsyncError (async (req, res, next) => {
+    const product = await Product.findById(req.params.id);
+    if (!product) {
             return next(new ErrorHandler('Product not found..!', 400));
         }
         res.status(201).json({
@@ -27,7 +23,7 @@ exports.getProduct = async (req, res, next) => {
             product: product
         })
     }
-}
+)
 
 //Create product - api/v1/product/new
 exports.newProduct = catchAsyncError (async (req, res, next) => {

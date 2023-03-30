@@ -22,16 +22,16 @@ module.exports = (err, req, res, next) => {
             error = new ErrorHandler(message, 400);
         }
 
-
         if (err.name == 'CastError') {
             message = `Resource not found: ${err.path}`;
             error = new ErrorHandler(message, 400);
         }
 
+        console.log(error.statusCode)
 
-        res.status(err.statusCode).json({
+        res.status(error.statusCode || err.statusCode).json({
             success: false,
-            message: error.message || 'Internal Server Error'
+            message: error.message || 'Internal Server Error',
         })
     }
 }
