@@ -20,4 +20,5 @@ Create new folder in backend called utils and add seeder file to perform mass DB
 Create functions and routes to handle update and delete product
 Create error handling routines along with stack to trace error in modules
 Errors handled: product not found, promise/async error, invalid id, unhandled rejection (mongo URI incorrect), unexpected exception
-API 
+API Features: search for a product, apply filters such as category/price, pagination
+create user model & user auth controller
