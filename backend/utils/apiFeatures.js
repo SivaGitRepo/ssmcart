@@ -29,7 +29,10 @@ class APIFeatures {
     }
 
     paginate(resultsPerPage) {
-        const currentPage = Number(this.queryStr.page) || 1;
+        const currentPage = Number(this.queryStr.page) || 0;
+        if (currentPage < 1) {
+            return this;
+        }
         const skip = resultsPerPage * (currentPage - 1);
         this.query.limit(resultsPerPage).skip(skip);
         return this;

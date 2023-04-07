@@ -23,3 +23,6 @@ Errors handled: product not found, promise/async error, invalid id, unhandled re
 API Features: search for a product, apply filters such as category/price, pagination
 Create user model & user auth controller
 Add post operation for user registration in auth controller file and new route; Encrypt password using bcrypt package
+Added jwt token for user authentication and user login function; Compare input password with password from the DB after decrypting
+Added JWT token in cookies
+Use the id filed from the JWT token and retrieve the User from the DB, then authenticate & authorize based on the user role
