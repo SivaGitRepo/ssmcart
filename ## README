@@ -21,4 +21,5 @@ Create functions and routes to handle update and delete product
 Create error handling routines along with stack to trace error in modules
 Errors handled: product not found, promise/async error, invalid id, unhandled rejection (mongo URI incorrect), unexpected exception
 API Features: search for a product, apply filters such as category/price, pagination
-create user model & user auth controller
+Create user model & user auth controller
+Add post operation for user registration in auth controller file and new route; Encrypt password using bcrypt package
