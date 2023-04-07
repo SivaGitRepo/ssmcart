@@ -26,3 +26,5 @@ Add post operation for user registration in auth controller file and new route; 
 Added jwt token for user authentication and user login function; Compare input password with password from the DB after decrypting
 Added JWT token in cookies
 Use the id filed from the JWT token and retrieve the User from the DB, then authenticate & authorize based on the user role
+Adding user id into the create product documents post to mongo DB
+Adding method to generate token & handle forgot password
