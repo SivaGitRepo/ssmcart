@@ -28,3 +28,4 @@ Added JWT token in cookies
 Use the id filed from the JWT token and retrieve the User from the DB, then authenticate & authorize based on the user role
 Adding user id into the create product documents post to mongo DB
 Adding method to generate token & handle forgot password
+Added route and method to reset new password based on reset token
