@@ -29,3 +29,6 @@ Use the id filed from the JWT token and retrieve the User from the DB, then auth
 Adding user id into the create product documents post to mongo DB
 Adding method to generate token & handle forgot password
 Added route and method to reset new password based on reset token
+Added route and method to get user profile and change password
+Added admin pages to get users, get/update/delete user
+Added new model for orders and methods/routes for create/get order
