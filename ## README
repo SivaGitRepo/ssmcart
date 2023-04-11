@@ -31,4 +31,25 @@ Adding method to generate token & handle forgot password
 Added route and method to reset new password based on reset token
 Added route and method to get user profile and change password
 Added admin pages to get users, get/update/delete user
-Added new model for orders and methods/routes for create/get order
+Added new model for orders and methods/routes for create/get/update/delete order
+Added new methods and routes for creating/getting and deleting product reviews
+FRONT-END begins: Navigate to frontend folder and execute: npx create-react-app .
+To run react app: npm start 
+Install necessary packages necessary for frontend:
+- axios                    : To connect to node api's
+- react-helmet-async       : To access HTML tags within React, ex: <title> tag within the <head> tag in the HTML page
+- redux (not installed)    : state management library, ex: to display a list, if component needs to change as per data
+- @reduxjs/toolkit         : alternate for redux library, since some functions (ex:createStore) in redux package are deprecated
+- react-redux              : redux library specific to react
+- redux-thunk              : To delay with actions which deal with state transition; ex: to delay the action in API requests
+- redux-devtools-extension : To deal with issues while developing redux related functionalities
+- react-router-dom         : To change react components based on URL
+open frontend/package.json file and see that new dependencies are added after the above step
+Remove unnecessary files from src & retain only required files: App.css, App.js, index.js & remove references to the deleted files
+Download the following repo from github.com for getting resources (ex: images, product info) needed: jvlcode/ecommerce-jvlcart-html
+Copy the content from repo/css/style.css into App.css
+Copy the css stylesheet links from repo/index.html into <head> portion of public/index.html (the styling's similar to amazon.com)
+Create new folder structure under src => src/components/layouts
+Create Header.js under layouts & copy nav block from repo/index.html into return statement. Header contains the top navigation bar
+Create Footer.js under layouts & copy footer block from repo/index.html into return statement
+Create home page under layouts & copy section block from repo/index.html into return statement; Home page handles default landing
