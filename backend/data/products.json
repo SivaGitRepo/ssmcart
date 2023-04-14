@@ -6,7 +6,7 @@
         "ratings": 4.1,
         "images": [
             {
-                "image": "product_001.jpg"
+                "image": "images/products/1.jpg"
             }
         ],
         "category": "Mobile Phones",
@@ -22,7 +22,7 @@
         "ratings": 4.2,
         "images": [
             {
-                "image": "product_002.jpg"
+                "image": "images/products/2.jpg"
             }
         ],
         "category": "Mobile Phones",
@@ -38,7 +38,7 @@
         "ratings": 4.3,
         "images": [
             {
-                "image": "product_003.jpg"
+                "image": "images/products/3.jpg"
             }
         ],
         "category": "Mobile Phones",
@@ -54,7 +54,7 @@
         "ratings": 4.4,
         "images": [
             {
-                "image": "product_004.jpg"
+                "image": "images/products/4.jpg"
             }
         ],
         "category": "Mobile Phones",
@@ -70,13 +70,61 @@
         "ratings": 4.5,
         "images": [
             {
-                "image": "product_005.jpg"
+                "image": "images/products/5.jpg"
             }
         ],
         "category": "Mobile Phones",
         "seller": "amazon.com",
         "stock" : 5,
         "numOfReviews": 15,
+        "reviews": []
+    },
+    {
+        "name": "MOTO G 6G",
+        "price": 23000,
+        "description": "Good phone from Moto with 6G compatibility",
+        "ratings": 4.7,
+        "images": [
+            {
+                "image": "images/products/6.jpg"
+            }
+        ],
+        "category": "Mobile Phones",
+        "seller": "amazon.com",
+        "stock" : 22,
+        "numOfReviews": 125,
+        "reviews": []
+    },
+    {
+        "name": "MOTO G 7G",
+        "price": 26000,
+        "description": "Good phone from Moto with 7G compatibility",
+        "ratings": 4.6,
+        "images": [
+            {
+                "image": "images/products/7.jpg"
+            }
+        ],
+        "category": "Mobile Phones",
+        "seller": "amazon.com",
+        "stock" : 33,
+        "numOfReviews": 143,
+        "reviews": []
+    },
+    {
+        "name": "MOTO G 8G",
+        "price": 42000,
+        "description": "Good phone from Moto with 8G compatibility",
+        "ratings": 4.8,
+        "images": [
+            {
+                "image": "images/products/8.jpg"
+            }
+        ],
+        "category": "Mobile Phones",
+        "seller": "amazon.com",
+        "stock" : 25,
+        "numOfReviews": 155,
         "reviews": []
     }
 ]

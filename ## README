@@ -50,6 +50,13 @@ Download the following repo from github.com for getting resources (ex: images, p
 Copy the content from repo/css/style.css into App.css
 Copy the css stylesheet links from repo/index.html into <head> portion of public/index.html (the styling's similar to amazon.com)
 Create new folder structure under src => src/components/layouts
-Create Header.js under layouts & copy nav block from repo/index.html into return statement. Header contains the top navigation bar
-Create Footer.js under layouts & copy footer block from repo/index.html into return statement
-Create home page under layouts & copy section block from repo/index.html into return statement; Home page handles default landing
+Create Header.js under components/layouts & copy nav block from repo/index.html into return. Header contains top navigation bar
+Create Footer.js under components/layouts & copy footer block from repo/index.html into return;
+Create home page under components & copy section block from repo/index.html into return; Home page handles default landing
+Create route for the home page ('/') by using BrowserRouter method from react-dom-route library
+Create title manipulation using helmet library depending on the page URL
+Using Redux library for state handling, create a new file src/store.js that works with reducers and combines them
+Create a new folder src/slices and a new file productSlice.js which will handle different states of Home / product landing page
+Create productsSlice for different reducers/actions/states for products entity, such as productsRequest, productsSuccess etc.
+Create a new folder src/actions and a new file productsActions which will handle the different product actions
+Create a webhook called dispatch within Home page which will call the action function
