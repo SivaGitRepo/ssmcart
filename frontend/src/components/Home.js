@@ -1,18 +1,24 @@
 import { Fragment, useEffect } from "react";
 import MetaData from './layouts/MetaData';
 import { useDispatch, useSelector } from 'react-redux';
-import { getProducts } from "../actions/productActions";
+import { getProducts } from "../actions/productsActions";
 import Loader from "./layouts/Loader";
 import Product from "./product/Product";
+import { toast } from "react-toastify";
 
 export default function Home () {
     
     const dispatch = useDispatch();
-    const { products, loading } = useSelector((state) => state.productsState);
+    const { products, loading, error } = useSelector((state) => state.productsState);
 
     useEffect(() => {
+        if (error) {
+            return toast.error ('hello ssm cart user',{
+                position: toast.POSITION.BOTTOM_RIGHT
+        })
+    }
         dispatch(getProducts)
-    }, [])
+    }, [error])
     
     return (
         <Fragment>

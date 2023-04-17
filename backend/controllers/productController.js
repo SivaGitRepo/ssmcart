@@ -8,6 +8,7 @@ exports.getProducts = async (req, res, next) => {
     const resultsPerPage = 2;
     const apiFeatures = new APIFeatures(Product.find(), req.query).search().filter().paginate(resultsPerPage);
     const products = await apiFeatures.query;
+    //return next(new ErrorHandler('Unable to loaddddd', 500));  
     res.status(200).json({
         success:true,
         count: products.length,

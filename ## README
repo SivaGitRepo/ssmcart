@@ -60,3 +60,7 @@ Create a new folder src/slices and a new file productSlice.js which will handle 
 Create productsSlice for different reducers/actions/states for products entity, such as productsRequest, productsSuccess etc.
 Create a new folder src/actions and a new file productsActions which will handle the different product actions
 Create a webhook called dispatch within Home page which will call the action function
+Show spinner while loading happens
+Install react toastify to display error messages in the UI and import and invoke it in the app.js file
+Add product detail route and create the slice/action/route/webhook for handling the new URL
+Render the dynamic content from backend API for the product detail URL
