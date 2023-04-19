@@ -22,6 +22,7 @@ exports.getProduct = catchAsyncError (async (req, res, next) => {
     if (!product) {
             return next(new ErrorHandler('Product not found..!', 400));
         }
+        //await new Promise(resolve => setTimeout(resolve, 3000));
         res.status(201).json({
             success:true,
             product: product

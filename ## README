@@ -64,3 +64,5 @@ Show spinner while loading happens
 Install react toastify to display error messages in the UI and import and invoke it in the app.js file
 Add product detail route and create the slice/action/route/webhook for handling the new URL
 Render the dynamic content from backend API for the product detail URL
+Add carousel for image scrolling in product detail page (useful when there are multiple images)
+Add link from product landing page to product detail page
