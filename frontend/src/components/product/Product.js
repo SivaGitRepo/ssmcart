@@ -6,6 +6,7 @@ export default function Product ({product}) {
             <div className="card p-3 rounded">
             <img
                 className="card-img-top mx-auto"
+                alt='product'
                 src={ product.images[0].image }
             />
             <div className="card-body d-flex flex-column">

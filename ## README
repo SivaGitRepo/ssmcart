@@ -66,3 +66,4 @@ Add product detail route and create the slice/action/route/webhook for handling 
 Render the dynamic content from backend API for the product detail URL
 Add carousel for image scrolling in product detail page (useful when there are multiple images)
 Add link from product landing page to product detail page
+Add pagination UI logic in Home page
