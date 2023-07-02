@@ -67,3 +67,6 @@ Render the dynamic content from backend API for the product detail URL
 Add carousel for image scrolling in product detail page (useful when there are multiple images)
 Add link from product landing page to product detail page
 Add pagination UI logic in Home page
+Add keyword search in UI; Add new component ProductSearch and add the route for the search component in App.js
+Remove pagination for search page, if returned results can fit in a single page; this is done by introducing new counter filteredProductsCount
+Route to home page on clicking the logo
