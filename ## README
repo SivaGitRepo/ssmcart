@@ -3,7 +3,7 @@ open the new folder in VS code
 create two new folders: frontend & backend
 open new terminal (ctrl + backticks), do 'npm init' and then add the necessary metadata for the project
 verify the newly created package.json file
-To install necessary packages, do 'npm install express dotenv mongoose nodemon'  NOTE: npm install nodemon --save-dev
+To install necessary packages, do 'npm install express dotenv mongoose nodemon' NOTE: npm install nodemon --save-dev
 open package.json file again and see that new dependencies are added after the above step
 create a new file app.js in backend folder, which will be used to create the express app
 create an instance of the express app and export it. The newly created object will have all the methods for the express app
@@ -34,39 +34,43 @@ Added admin pages to get users, get/update/delete user
 Added new model for orders and methods/routes for create/get/update/delete order
 Added new methods and routes for creating/getting and deleting product reviews
 FRONT-END begins: Navigate to frontend folder and execute: npx create-react-app .
-To run react app: npm start 
+To run react app: 'npm start' & for backend use 'npm run dev/prod'
 Install necessary packages necessary for frontend:
-- axios                    : To connect to node api's
-- react-helmet-async       : To access HTML tags within React, ex: <title> tag within the <head> tag in the HTML page
-- redux (not installed)    : state management library, ex: to display a list, if component needs to change as per data
-- @reduxjs/toolkit         : alternate for redux library, since some functions (ex:createStore) in redux package are deprecated
-- react-redux              : redux library specific to react
-- redux-thunk              : To delay with actions which deal with state transition; ex: to delay the action in API requests
+
+- axios : To connect to node api's
+- react-helmet-async : To access HTML tags within React, ex: <title> tag within the <head> tag in the HTML page
+- redux (not installed) : state management library, ex: to display a list, if component needs to change as per data
+- @reduxjs/toolkit : alternate for redux library, since some functions (ex:createStore) in redux package are deprecated
+- react-redux : redux library specific to react
+- redux-thunk : To delay with actions which deal with state transition; ex: to delay the action in API requests
 - redux-devtools-extension : To deal with issues while developing redux related functionalities
-- react-router-dom         : To change react components based on URL
-open frontend/package.json file and see that new dependencies are added after the above step
-Remove unnecessary files from src & retain only required files: App.css, App.js, index.js & remove references to the deleted files
-Download the following repo from github.com for getting resources (ex: images, product info) needed: jvlcode/ecommerce-jvlcart-html
-Copy the content from repo/css/style.css into App.css
-Copy the css stylesheet links from repo/index.html into <head> portion of public/index.html (the styling's similar to amazon.com)
-Create new folder structure under src => src/components/layouts
-Create Header.js under components/layouts & copy nav block from repo/index.html into return. Header contains top navigation bar
-Create Footer.js under components/layouts & copy footer block from repo/index.html into return;
-Create home page under components & copy section block from repo/index.html into return; Home page handles default landing
-Create route for the home page ('/') by using BrowserRouter method from react-dom-route library
-Create title manipulation using helmet library depending on the page URL
-Using Redux library for state handling, create a new file src/store.js that works with reducers and combines them
-Create a new folder src/slices and a new file productSlice.js which will handle different states of Home / product landing page
-Create productsSlice for different reducers/actions/states for products entity, such as productsRequest, productsSuccess etc.
-Create a new folder src/actions and a new file productsActions which will handle the different product actions
-Create a webhook called dispatch within Home page which will call the action function
-Show spinner while loading happens
-Install react toastify to display error messages in the UI and import and invoke it in the app.js file
-Add product detail route and create the slice/action/route/webhook for handling the new URL
-Render the dynamic content from backend API for the product detail URL
-Add carousel for image scrolling in product detail page (useful when there are multiple images)
-Add link from product landing page to product detail page
-Add pagination UI logic in Home page
-Add keyword search in UI; Add new component ProductSearch and add the route for the search component in App.js
-Remove pagination for search page, if returned results can fit in a single page; this is done by introducing new counter filteredProductsCount
-Route to home page on clicking the logo
+- react-router-dom : To change react components based on URL
+  open frontend/package.json file and see that new dependencies are added after the above step
+  Remove unnecessary files from src & retain only required files: App.css, App.js, index.js & remove references to the deleted files
+  Download the following repo from github.com for getting resources (ex: images, product info) needed: jvlcode/ecommerce-jvlcart-html
+  Copy the content from repo/css/style.css into App.css
+  Copy the css stylesheet links from repo/index.html into <head> portion of public/index.html (the styling's similar to amazon.com)
+  Create new folder structure under src => src/components/layouts
+  Create Header.js under components/layouts & copy nav block from repo/index.html into return. Header contains top navigation bar
+  Create Footer.js under components/layouts & copy footer block from repo/index.html into return;
+  Create home page under components & copy section block from repo/index.html into return; Home page handles default landing
+  Create route for the home page ('/') by using BrowserRouter method from react-dom-route library
+  Create title manipulation using helmet library depending on the page URL
+  Using Redux library for state handling, create a new file src/store.js that works with reducers and combines them
+  Create a new folder src/slices and a new file productSlice.js which will handle different states of Home / product landing page
+  Create productsSlice for different reducers/actions/states for products entity, such as productsRequest, productsSuccess etc.
+  Create a new folder src/actions and a new file productsActions which will handle the different product actions
+  Create a webhook called dispatch within Home page which will call the action function
+  Show spinner while loading happens
+  Install react toastify to display error messages in the UI and import and invoke it in the app.js file
+  Add product detail route and create the slice/action/route/webhook for handling the new URL
+  Render the dynamic content from backend API for the product detail URL
+  Add carousel for image scrolling in product detail page (useful when there are multiple images)
+  Add link from product landing page to product detail page
+  Add pagination UI logic in Home page
+  Add keyword search in UI; Add new component ProductSearch and add the route for the search component in App.js
+  Remove pagination for search page, if returned results can fit in a single page; this is done by introducing new counter filteredProductsCount
+  Route to home page on clicking the logo & clear search string
+  Add price filter - wip, need to start with rc slider
+  Add category filter - to be started
+  Add rating filter - to be started
