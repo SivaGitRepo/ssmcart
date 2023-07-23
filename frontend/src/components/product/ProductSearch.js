@@ -8,12 +8,19 @@ import Product from "../product/Product";
 import { toast } from "react-toastify";
 import Pagination from "react-js-pagination";
 import { useParams } from "react-router-dom";
+import Slider from "rc-slider";
+import Tooltip from "rc-tooltip";
+import "rc-slider/assets/index.css";
+import "rc-tooltip/assets/bootstrap.css";
 
 export default function ProductSearch() {
   const dispatch = useDispatch();
   const { products, loading, error, productsCount, resultsPerPage } =
     useSelector((state) => state.productsState);
   const [currentPage, setCurrentPage] = useState(1);
+  const [price, setPrice] = useState([1, 100000]);
+  const [priceChanged, setPriceChanged] = useState(price);
+
   const { keyword } = useParams();
 
   const setCurrentPageNo = (pageNo) => {
@@ -26,8 +33,8 @@ export default function ProductSearch() {
         position: toast.POSITION.BOTTOM_RIGHT,
       });
     }
-    dispatch(getProducts(currentPage, keyword));
-  }, [error, dispatch, currentPage, keyword]);
+    dispatch(getProducts(currentPage, keyword, price));
+  }, [error, dispatch, currentPage, keyword, priceChanged]);
 
   return (
     <Fragment>
@@ -40,7 +47,30 @@ export default function ProductSearch() {
           <section id="products" className="container mt-5">
             <div className="row">
               <div className="col-6 col-md-3 mb-5 mt-5">
-                <div className="px-5"></div>
+                <div className="px-5" onMouseUp={() => setPriceChanged(price)}>
+                  <Slider
+                    range={true}
+                    marks={{
+                      1: "$1",
+                      100000: "$100000",
+                    }}
+                    min={1}
+                    max={100000}
+                    defaultValue={price}
+                    onChange={(price) => {
+                      setPrice(price);
+                    }}
+                    handleRender={(renderProps) => {
+                      return (
+                        <Tooltip
+                          overlay={`$${renderProps.props["aria-valuenow"]}`}
+                        >
+                          <div {...renderProps.props}> </div>
+                        </Tooltip>
+                      );
+                    }}
+                  />
+                </div>
               </div>
               <div className="col-6 col-md-9">
                 <div className="row">

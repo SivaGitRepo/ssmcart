@@ -6,7 +6,10 @@
         "ratings": 4.1,
         "images": [
             {
-                "image": "images/products/1.jpg"
+                "image": "/images/products/1a.jpg"
+            },
+            {
+                "image": "/images/products/1b.jpg"
             }
         ],
         "category": "Mobile Phones",
@@ -22,7 +25,13 @@
         "ratings": 4.2,
         "images": [
             {
-                "image": "images/products/2.jpg"
+                "image": "/images/products/2a.jpg"
+            },
+            {
+                "image": "/images/products/2b.jpg"
+            },
+            {
+                "image": "/images/products/2c.jpg"
             }
         ],
         "category": "Mobile Phones",
@@ -38,7 +47,16 @@
         "ratings": 4.3,
         "images": [
             {
-                "image": "images/products/3.jpg"
+                "image": "/images/products/3a.jpg"
+            },
+            {
+                "image": "/images/products/3b.jpg"
+            },
+            {
+                "image": "/images/products/3c.jpg"
+            },
+            {
+                "image": "/images/products/3d.jpg"
             }
         ],
         "category": "Mobile Phones",
@@ -54,7 +72,10 @@
         "ratings": 4.4,
         "images": [
             {
-                "image": "images/products/4.jpg"
+                "image": "/images/products/4a.jpg"
+            },
+            {
+                "image": "/images/products/4b.jpg"
             }
         ],
         "category": "Mobile Phones",
@@ -70,7 +91,13 @@
         "ratings": 4.5,
         "images": [
             {
-                "image": "images/products/5.jpg"
+                "image": "/images/products/5a.jpg"
+            },
+            {
+                "image": "/images/products/5b.jpg"
+            },
+            {
+                "image": "/images/products/5c.jpg"
             }
         ],
         "category": "Mobile Phones",
@@ -86,7 +113,10 @@
         "ratings": 4.7,
         "images": [
             {
-                "image": "images/products/6.jpg"
+                "image": "/images/products/6a.jpg"
+            },
+            {
+                "image": "/images/products/6b.jpg"
             }
         ],
         "category": "Mobile Phones",
@@ -102,7 +132,10 @@
         "ratings": 4.6,
         "images": [
             {
-                "image": "images/products/7.jpg"
+                "image": "/images/products/7a.jpg"
+            },
+            {
+                "image": "/images/products/7b.jpg"
             }
         ],
         "category": "Mobile Phones",
@@ -118,13 +151,149 @@
         "ratings": 4.8,
         "images": [
             {
-                "image": "images/products/8.jpg"
+                "image": "/images/products/8a.jpg"
+            },
+            {
+                "image": "/images/products/8b.jpg"
             }
         ],
         "category": "Mobile Phones",
         "seller": "amazon.com",
         "stock" : 25,
         "numOfReviews": 155,
+        "reviews": []
+    },
+    {
+        "name": "Boat headset",
+        "price": 2000,
+        "description": "Stylish boat headset",
+        "ratings": 3.8,
+        "images": [
+            {
+                "image": "/images/products/headset_1a.jpg"
+            }
+        ],
+        "category": "Headphones",
+        "seller": "boat.com",
+        "stock" : 250,
+        "numOfReviews": 1555,
+        "reviews": []
+    },
+    {
+        "name": "Jabra standard headset",
+        "price": 1999,
+        "description": "Standard headset suitable for teams calls",
+        "ratings": 4.1,
+        "images": [
+            {
+                "image": "/images/products/headset_2a.jpg"
+            }
+        ],
+        "category": "Headphones",
+        "seller": "jabra.com",
+        "stock" : 2299,
+        "numOfReviews": 1199,
+        "reviews": []
+    },
+    {
+        "name": "Boom headset",
+        "price": 9999,
+        "description": "Boom headset with great bass effect",
+        "ratings": 4.3,
+        "images": [
+            {
+                "image": "/images/products/headset_3a.jpg"
+            }
+        ],
+        "category": "Headphones",
+        "seller": "boom.com",
+        "stock" : 99,
+        "numOfReviews": 999,
+        "reviews": []
+    },
+    {
+        "name": "Plantronics headset",
+        "price": 12000,
+        "description": "Plantronics geo spatial universe one headset",
+        "ratings": 4.8,
+        "images": [
+            {
+                "image": "/images/products/headset_4a.jpg"
+            },
+            {
+                "image": "/images/products/headset_4b.jpg"
+            }
+        ],
+        "category": "Mobile Phones",
+        "seller": "plantronics.com",
+        "stock" : 256,
+        "numOfReviews": 15000,
+        "reviews": []
+    },
+    {
+        "name": "Dell standard laptop",
+        "price": 32000,
+        "description": "Standard laptop for students",
+        "config": "512 GB SSD, 8 GB RAM",
+        "ratings": 4.2,
+        "images": [
+            {
+                "image": "/images/products/laptop_1a.jpg"
+            },
+            {
+                "image": "/images/products/laptop_1b.jpg"
+            },
+            {
+                "image": "/images/products/laptop_1c.jpg"
+            }
+        ],
+        "category": "Laptops",
+        "seller": "dell.com",
+        "stock" : 2500,
+        "numOfReviews": 15555,
+        "reviews": []
+    },
+    {
+        "name": "Dell sleek laptop",
+        "price": 32000,
+        "description": "Sleek laptop for travellers",
+        "config": "1 TB SSD, 16 GB RAM",
+        "ratings": 4.7,
+        "images": [
+            {
+                "image": "/images/products/laptop_2a.jpg"
+            },
+            {
+                "image": "/images/products/laptop_2b.jpg"
+            }
+        ],
+        "category": "Laptops",
+        "seller": "dell.com",
+        "stock" : 2500,
+        "numOfReviews": 15555,
+        "reviews": []
+    },
+    {
+        "name": "HP standard laptop",
+        "price": 52000,
+        "description": "Standard laptop from HP",
+        "config": "512 GB SSD, 8 GB RAM",
+        "ratings": 4.2,
+        "images": [
+            {
+                "image": "/images/products/laptop_3a.jpg"
+            },
+            {
+                "image": "/images/products/laptop_3b.jpg"
+            },
+            {
+                "image": "/images/products/laptop_3c.jpg"
+            }
+        ],
+        "category": "Laptops",
+        "seller": "hp.com",
+        "stock" : 4500,
+        "numOfReviews": 25555,
         "reviews": []
     }
 ]

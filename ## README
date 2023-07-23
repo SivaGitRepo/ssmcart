@@ -71,6 +71,8 @@ Install necessary packages necessary for frontend:
   Add keyword search in UI; Add new component ProductSearch and add the route for the search component in App.js
   Remove pagination for search page, if returned results can fit in a single page; this is done by introducing new counter filteredProductsCount
   Route to home page on clicking the logo & clear search string
-  Add price filter - wip, need to start with rc slider
+  Add price filter, by shifting page content to the right to accommodate slider, use rc slider for selecting price range;
+  Use rc tooltip to show price when sliding with the price slider
+  Create new state to be invoked when there is a change in the price slider, also add a priceChanged state to perform search on mouse up action on the slider
   Add category filter - to be started
   Add rating filter - to be started

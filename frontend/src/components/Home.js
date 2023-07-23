@@ -24,7 +24,6 @@ export default function Home() {
         position: toast.POSITION.BOTTOM_RIGHT,
       });
     }
-    console.log("currrrrrent: ", currentPage);
     dispatch(getProducts(currentPage, null));
     //dispatch(getProducts);
   }, [error, dispatch, currentPage]);
