@@ -74,5 +74,42 @@ Install necessary packages necessary for frontend:
   Add price filter, by shifting page content to the right to accommodate slider, use rc slider for selecting price range;
   Use rc tooltip to show price when sliding with the price slider
   Create new state to be invoked when there is a change in the price slider, also add a priceChanged state to perform search on mouse up action on the slider
-  Add category filter - to be started
-  Add rating filter - to be started
+  Add category filter
+  Add rating filter - can be improved to include ratings which are not only whole numbers, ex: 4.3
+  MODULE 7 - User login & Registration
+  -Login: within src/slices folder, create new file authSlice.js & create the required slices:
+  -- set the initial state [loading: false, isAuthenticated: false]
+  -- add the reducers [reducers are needed for setting the state variables, ex: loading = true]
+  --- for loginRequest [loading: true]
+  --- for loginSuccess [loading: false, isAuthenticated: true]
+  ---- get user details from the payload [user: action.payload.user]
+  --- for loginFail [loading: false, isAuthenticated: false]
+  ---- get error details from the payload [error: action.payload]
+  -- get the actions and reducer from the create slice
+  -- export the actions retrieved from the slice
+  -- export the reducer
+- within the src/ folder, utilize the newly created authReducer in the store.js file
+- within src/actions folder, create new file userActions
+  -- create an async function which accepts email and password & dispatches the login request
+  --- connect to the login api post method, use await to get axios response
+  -- in case of error in login, handle login fail
+- within /components folder, create new file called user/login.js
+  -- add the html form to get username & password [components are used to show the presentation]
+  -- add the route for the login page in the src/App.js file
+  -- use 2-way binding to get the username and password typed in the form
+  -- on submitting form, pass the username and password & dispatch login action in UserActions
+  -- disable the submit button if loading is true until login is success or failed
+  -- handle the error in the useEffect function [useEffect is utilized after loading is done]
+  -- if login is successful [isAuthenticated: true] navigate to next page
+  Registration: in the src/slices/authSlice.js file, create the required slices & actions (such as registerRequest, registerSuccess, regsiterFail)
+  - in the src/actions/userActions file, create a new function to register by dispatching the respective actions
+    -- for ex: loginRequest calls the node api to register the user details as a multipart form (multipart since the form contains user image too)
+  - within /components folder, create new file called user/register.js
+    -- add the html form to get user details [components are used to show the presentation]
+    -- add the route for the register page in the src/App.js file
+    -- create a state called userData and a function called setUserData which modifies the state via useState hook
+    --- define the empty values for the state [name, email, password]
+    -- to collect the values entered in the user form into the state variables, use a new function called onChange
+    -- handle multi-part form data
+    --- install multer package in backend/routes
+- Add logic for logout

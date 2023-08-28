@@ -6,7 +6,7 @@ import {
 } from "../slices/productsSlice";
 
 export const getProducts =
-  (currentPage, keyword, price) => async (dispatch) => {
+  (currentPage, keyword, price, category, rating) => async (dispatch) => {
     try {
       dispatch(productsRequest());
       let link = `/api/v1/products?page=${currentPage}`;
@@ -19,7 +19,14 @@ export const getProducts =
         link += `&price[gte]=${price[0]}&price[lte]=${price[1]}`;
       }
 
-      console.log(link);
+      if (category) {
+        link += `&category=${category}`;
+      }
+
+      if (rating) {
+        link += `&ratings=${rating}`;
+      }
+
       const { data } = await axios.get(link);
       dispatch(productsSuccess(data));
     } catch (error) {
